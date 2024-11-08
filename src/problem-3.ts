@@ -2,14 +2,14 @@
 
 const countWordOccurrences = (sentence: string, word: string): number => {
 
-    const words = sentence.toLowerCase().replace(/[^\w\s]/g, '').split(" ");
+    const words = sentence.toLowerCase().split(" ");
 
   
     return words.filter(w => w === word.toLowerCase()).length;
   };
   
   const totalWord = countWordOccurrences(
-    "TypeScript is great. I love TypeScript!",
+    "TypeScript is more efficilent. I love TypeScript",
     "Typescript"
   );
   
